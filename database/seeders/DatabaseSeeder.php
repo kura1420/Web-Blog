@@ -17,21 +17,21 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        // User::factory()->create([
-        //     'name' => 'admin',
-        //     'email' => 'admin@domain.com',
-        //     'password' => bcrypt('password'),
-        // ]);
+        User::factory()->create([
+            'name' => 'admin',
+            'email' => 'admin@domain.com',
+            'password' => bcrypt('password'),
+        ]);
 
-        // User::factory()->create([
-        //     'name' => 'writer',
-        //     'email' => 'writer@domain.com',
-        //     'password' => bcrypt('password'),
-        // ]);
+        User::factory()->create([
+            'name' => 'writer',
+            'email' => 'writer@domain.com',
+            'password' => bcrypt('password'),
+        ]);
 
         $this->call([
-            // CategorySeeder::class,
-            // TagSeeder::class,
+            CategorySeeder::class,
+            TagSeeder::class,
             PostSeeder::class,
         ]);
     }
