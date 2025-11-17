@@ -1,0 +1,11 @@
+<x-filament-panels::page>
+    <div>
+        @livewire(\App\Filament\Widgets\TotalPostWidget::class)
+    </div>
+    <div>
+        @livewire(\App\Filament\Widgets\LastCommentWidget::class)
+    </div>
+    <div>
+        @livewire(\App\Filament\Widgets\MostUseTagWidget::class)
+    </div>
+</x-filament-panels::page>
